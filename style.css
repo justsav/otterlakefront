@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+html {
+  min-width: 768px;
+  background-image: url("https://otterlakepark.net/images/backgrounds/Clovers_with_dew_Background.jpg");
+  background-attachment: fixed;
+  margin: 0;
+  background-color: #b7bcbd;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#header {
+  border: dotted red 2px;
+  height: 100px;
+}
+
+#navigation {
+  border: dotted red 2px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#navbar {
+  background-color: #697172;
+  border-color: #585f5f;
+  border-radius: 4px;
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 22px;
+  border: 1px solid transparent;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 28px;
+}
+
+#navbar ul a {
+  color: #fff;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 35px;
+  float: left;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
+  line-height: 22px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #515757;
+}
+
+#main {
+  border: dotted red 2px;
+  height: 500px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#main-elements {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  border-radius: 4px;
+}
+
+#sorting {
+  border: dotted red 2px;
+  height: 100px;
+}
+
+#content {
+  border: dotted red 2px;
+  height: 250px;
+}
+
+#footer {
+  border: dotted red 2px;
+  height: 100px;
+}

@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -15,12 +18,20 @@ html {
 }
 
 #header {
-  border: dotted red 2px;
-  height: 100px;
+}
+
+#header h1 {
+  color: #fff;
+  font-size: 30px;
+  line-height: 22px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding-left: 15px;
 }
 
 #navigation {
-  border: dotted red 2px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -47,27 +58,30 @@ html {
   color: #fff;
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-right: 35px;
+  padding-right: 17px;
+  padding-left: 17px;
   float: left;
   font-weight: 700;
   text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
   line-height: 22px;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
 }
 
 li a:hover {
   background-color: #515757;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 17px;
+  padding-left: 17px;
 }
 
-#main {
-  border: dotted red 2px;
-  height: 500px;
+#content {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-#main-elements {
+#content-elements {
   margin-right: auto;
   margin-left: auto;
   background-color: white;
@@ -75,16 +89,145 @@ li a:hover {
 }
 
 #sorting {
-  border: dotted red 2px;
-  height: 100px;
 }
 
-#content {
-  border: dotted red 2px;
-  height: 250px;
+#sorting h4 {
+  padding-left: 30px;
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  padding: 30px;
+  }
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  transition: all .2s ease-in-out;
+  border-radius: 4px;
+}
+
+.grid > article:hover { 
+  transform: scale(1.05); 
+}
+
+.grid > article img {
+  max-width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.article-bits {
+  text-align: center;
+}
+
+.mainDesc {
+  min-height: 100px;
+}
+
+.text {
+  padding: 0 20px 20px;
+}
+
+.myBtn {
+  background: #697172;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  }
+
+.text > p {
+  font-size: 12px;
+}
+
+.buttonSet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 500px;
+}
+
+.buttonSet > .myBtn {
+  width: 100px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+#modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 550px;
+  border-radius: 4px;
+}
+
+#modal-content > img {
+  padding:1px;
+  border:2px solid #021a40;
+  background-color:#fefefe;
+}
+
+#modal-content > p {
+  max-width: 500px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#price {
+  padding-bottom: 20px;
 }
 
 #footer {
-  border: dotted red 2px;
   height: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#footer-elements {
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  border-radius: 4px;
+  height: 45px;
+  text-align: center;
+}
+
+#footer-elements > p {
+  padding-top: 15px;
+  font-size: 12px;
 }

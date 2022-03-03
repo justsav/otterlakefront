@@ -4,26 +4,224 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Main</title>
+    <title>Otter Lake Overnight Campground</title>
   </head>
   <body>
-    <div id="header"></div>
+    <div id="myModal" class="modal">
+      <div id="modal-content">
+        <span class="close">&times;</span>
+      </div>
+    </div>
+    <div id="header">
+      <h1>Browse Campsites</h1>
+    </div>
     <div id="navigation">
       <div id="navbar">
         <ul>
-          <li><a href="#">Exit Campground</a></li>
-          <li><a href="#">Booking Form</a></li>
+          <li><a href="https://otterlakepark.net/">Exit Campground</a></li>
+          <li>
+            <a
+              href="https://www.otterlakepark.net/documents/787/Overnight_Camping_Information.pdf"
+              >Booking Form</a
+            >
+          </li>
         </ul>
       </div>
     </div>
-    <div id="main">
-      <div id="main-elements">
-        <div id="sorting"></div>
-        <div id="content"></div>
+    <div id="content">
+      <div id="content-elements">
+        <div id="sorting">
+          <h4>Choose a Campsite Below to Learn More</h4>
+        </div>
+        <main class="grid">
+          <article>
+            <img src="./campsites_final/1.jpg" alt="Sample photo" />
+            <div class="text">
+              <p class="article-bits"><b>Campsite #1</b></p>
+              <p class="mainDesc">
+                Small shaded site with a 12' by 24' concrete pad to park your
+                camper on, water and 20/30/50 amp electric, close to site #2
+                would be a great spot if you want a second site close for
+                camping with friends.
+              </p>
+              <p class="article-bits"><b>Price: </b> $35/night</p>
+              <input
+                type="button"
+                class="myBtn"
+                value="Learn More"
+                onclick="showModal();loadModalContent(1);"
+              />
+            </div>
+          </article>
+          <article>
+            <img src="./campsites_final/2.jpg" alt="Sample photo" />
+            <div class="text">
+              <p class="article-bits"><b>Campsite #2</b></p>
+              <p class="mainDesc">
+                Small shaded site with a 12' by 24' concrete pad to park your
+                camper on, water and 20/30/50 amp electric, close to site #1
+                would be a great spot if you want a second site close for
+                camping with friends.
+              </p>
+              <p class="article-bits"><b>Price: </b> $35/night</p>
+              <input
+                type="button"
+                class="myBtn"
+                value="Learn More"
+                onclick="showModal();loadModalContent(2);"
+              />
+            </div>
+          </article>
+          <article>
+            <img src="./campsites_final/3.jpg" alt="Sample photo" />
+            <div class="text">
+              <p class="article-bits"><b>Campsite #3</b></p>
+              <p class="mainDesc">
+                Small shaded site with level gravel to park your camper on,
+                water and 20/30/50 amp electric. Near restroom (No Showers)
+              </p>
+              <p class="article-bits"><b>Price: </b> $35/night</p>
+              <input
+                type="button"
+                class="myBtn"
+                value="Learn More"
+                onclick="showModal();loadModalContent(3);"
+              />
+            </div>
+          </article>
+          <article>
+            <img src="./campsites_final/4.jpg" alt="Sample photo" />
+            <div class="text">
+              <p class="article-bits"><b>Campsite #4</b></p>
+              <p class="mainDesc">
+                Only pull-through site with level gravel to park your camper
+                will fit up to a 38' camper, water and 20/30/50 amp electric.
+                Near restroom (No Showers)
+              </p>
+              <p class="article-bits"><b>Price: </b> $35/night</p>
+              <input
+                type="button"
+                class="myBtn"
+                value="Learn More"
+                onclick="showModal();loadModalContent(4);"
+              />
+            </div>
+          </article>
+          <article>
+            <img src="./campsites_final/5.jpg" alt="Sample photo" />
+            <div class="text">
+              <p class="article-bits"><b>Campsite #5</b></p>
+              <p class="mainDesc">
+                Back in spot with great lake view, will fit up to a 38' camper,
+                water and 20/30/50 amp electric.
+              </p>
+              <p class="article-bits"><b>Price: </b> $35/night</p>
+              <input
+                type="button"
+                class="myBtn"
+                value="Learn More"
+                onclick="showModal();loadModalContent(5);"
+              />
+            </div>
+          </article>
+          <article>
+            <img src="./campsites_final/6.jpg" alt="Sample photo" />
+            <div class="text">
+              <p class="article-bits"><b>Campsite #6</b></p>
+              <p class="mainDesc">
+                Back in spot with great lake view, will fit up to a 38' camper,
+                water and 20/30/50 amp electric.
+              </p>
+              <p class="article-bits"><b>Price: </b> $35/night</p>
+              <input
+                type="button"
+                class="myBtn"
+                value="Learn More"
+                onclick="showModal();loadModalContent(6);"
+              />
+            </div>
+          </article>
+          <article>
+            <img src="./campsites_final/7.jpg" alt="Sample photo" />
+            <div class="text">
+              <p class="article-bits"><b>Campsite A</b></p>
+              <p class="mainDesc">
+                Level shaded primitive site near rest room (no shower)
+              </p>
+              <p class="article-bits"><b>Price: </b> $15/night</p>
+              <input
+                type="button"
+                class="myBtn"
+                value="Learn More"
+                onclick="showModal();loadModalContent(7);"
+              />
+            </div>
+          </article>
+          <article>
+            <img src="./campsites_final/8.jpg" alt="Sample photo" />
+            <div class="text">
+              <p class="article-bits"><b>Campsite B</b></p>
+              <p class="mainDesc">
+                Shaded primitive site, with great views of the lake but not
+                level
+              </p>
+              <p class="article-bits"><b>Price: </b> $15/night</p>
+              <input
+                type="button"
+                class="myBtn"
+                value="Learn More"
+                onclick="showModal();loadModalContent(8);"
+              />
+            </div>
+          </article>
+          <article>
+            <img src="./campsites_final/9.jpg" alt="Sample photo" />
+            <div class="text">
+              <p class="article-bits"><b>Campsite C</b></p>
+              <p class="mainDesc">
+                Shaded primitive site, with great views of the lake but not
+                level
+              </p>
+              <p class="article-bits"><b>Price: </b> $15/night</p>
+              <input
+                type="button"
+                class="myBtn"
+                value="Learn More"
+                onclick="showModal();loadModalContent(9);"
+              />
+            </div>
+          </article>
+          <article>
+            <img src="./campsites_final/10.jpg" alt="Sample photo" />
+            <div class="text">
+              <p class="article-bits"><b>Campsite D</b></p>
+              <p class="mainDesc">
+                Shaded primitive site, with great views of the lake but not
+                level
+              </p>
+              <p class="article-bits"><b>Price: </b> $15/night</p>
+              <input
+                type="button"
+                class="myBtn"
+                value="Learn More"
+                onclick="showModal();loadModalContent(10);"
+              />
+            </div>
+          </article>
+        </main>
       </div>
     </div>
-    <div id="footer"></div>
+
+    <div id="footer">
+      <div id="footer-elements">
+        <p>© 2022 Site Design by Justin Savage. All rights reserved.</p>
+      </div>
+    </div>
   </body>
 </html>
